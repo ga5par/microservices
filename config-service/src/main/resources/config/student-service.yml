@@ -1,0 +1,21 @@
+server:
+ port: 8100
+  
+jpa:
+ show-sql: true
+ 
+datasource:
+ driver-class-name: org.h2.Driver
+ url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+ username: sa
+ password: 
+  
+h2:
+ console:
+  enabled: true
+  path: /h2console
+   
+eureka:
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8500/eureka
